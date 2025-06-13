@@ -62,7 +62,7 @@ The Microsoft Docs MCP Server supports quick installation across multiple develo
 | **Visual Studio** | Manual configuration required | [Visual Studio MCP Official Guide](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022) |
 | **Cursor IDE** | [![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=microsoft.docs.mcp&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbGVhcm4ubWljcm9zb2Z0LmNvbS9hcGkvbWNwIn0%3D) | [Cursor MCP Official Guide](https://docs.cursor.com/context/model-context-protocol) |
 
-## ▶️ Getting Started
+### ▶️ Getting Started
 1. Open GitHub Copilot in VS Code and [switch to Agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
 2. You should see the Docs MCP Server in the list of tools
 3. Try a prompt that tells the agent to use the Docs MCP Server, such as "what are the az cli commands to create an Azure container app according to official Microsoft Learn documentation?"
