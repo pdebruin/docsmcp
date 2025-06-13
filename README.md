@@ -56,11 +56,17 @@ https://learn.microsoft.com/api/mcp
 
 The Microsoft Docs MCP Server supports quick installation across multiple development environments. Choose your preferred client below for streamlined setup:
 
-| Client | One-click Installation | Get Started |
+| Client | One-click Installation | MCP Guide |
 |--------|----------------------|-------------------|
 | **VS Code** | [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Docs_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=microsoft.docs.mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install_Microsoft_Docs_MCP-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=microsoft.docs.mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D&quality=insiders) | [VS Code MCP Official Guide](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) |
 | **Visual Studio** | Manual configuration required | [Visual Studio MCP Official Guide](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022) |
 | **Cursor IDE** | [![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=microsoft.docs.mcp&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbGVhcm4ubWljcm9zb2Z0LmNvbS9hcGkvbWNwIn0%3D) | [Cursor MCP Official Guide](https://docs.cursor.com/context/model-context-protocol) |
+
+### ▶️ Getting Started
+1. Open GitHub Copilot in VS Code and [switch to Agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
+2. You should see the Docs MCP Server in the list of tools
+3. Try a prompt that tells the agent to use the Docs MCP Server, such as "what are the az cli commands to create an Azure container app according to official Microsoft Learn documentation?"
+4. The agent should be able to use the Docs MCP Server tools to complete your query
 
 ## ❓ Troubleshooting
 
@@ -74,9 +80,8 @@ The Microsoft Docs MCP Server supports quick installation across multiple develo
 
 ### 🆘 Getting Support
 
-For issues with the Microsoft Docs MCP Server:
-- Check the [Model Context Protocol documentation](https://modelcontextprotocol.io)
-- [Give us feedback](https://github.com/MicrosoftDocs/mcp/issues)
+- [Ask questions, share ideas](https://github.com/MicrosoftDocs/mcp/discussions)
+- [Create an issue](https://github.com/MicrosoftDocs/mcp/issues)
 
 ## 🔮 Future Enhancements
 
@@ -87,5 +92,6 @@ The Microsoft Docs MCP Server team is working on several enhancements:
 
 ## 📚 Additional Resources
 
-- [Model Context Protocol Specification](https://modelcontextprotocol.io)
+- [Microsoft MCP Servers](https://github.com/microsoft/mcp)
 - [Microsoft Learn](https://learn.microsoft.com)
+- [Model Context Protocol Specification](https://modelcontextprotocol.io)
