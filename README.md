@@ -46,21 +46,6 @@ https://learn.microsoft.com/api/mcp
 }
 ```
 
-**Example Claude Desktop configuration:**
-
-Claude Desktop doesn't natively support HTTP MCP servers yet. However, you can connect to your Microsoft Docs MCP server using the `mcp-remote` proxy package. 
-
-```json
-{
-  "mcpServers": {
-    "microsoft.docs.mcp": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://learn.microsoft.com/api/mcp"]
-    }
-  }
-}
-```
-
 ## 🛠️ Currently Supported Tools
 
 | Tool Name | Description | Input Parameters |
@@ -77,6 +62,16 @@ The Microsoft Docs MCP Server supports quick installation across multiple develo
 | **Visual Studio** | Manual configuration required<br/>Use `"type": "http"` | [Visual Studio MCP Official Guide](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022) |
 | **Cursor IDE** | [![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=microsoft.docs.mcp&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbGVhcm4ubWljcm9zb2Z0LmNvbS9hcGkvbWNwIn0%3D) | [Cursor MCP Official Guide](https://docs.cursor.com/context/model-context-protocol) |
 | **Roo Code** | Manual configuration required<br/>Use `"type": "streamable-http"` | [Roo Code MCP Guide](https://docs.roocode.com/features/mcp/using-mcp-in-roo) |
+
+### Alternative Installation (for clients without Streamable HTTP support)
+
+Some clients don't support `Streamable HTTP`, so you can use `mcp-remote` as a workaround:
+
+| Client | Manual Configuration | MCP Guide |
+|--------|----------------------|-----------| 
+| **Claude Desktop** | <details><summary>View Config</summary><pre>{<br/>  "microsoft.docs.mcp": {<br/>    "command": "npx",<br/>    "args": [<br/>      "-y",<br/>      "mcp-remote",<br/>      "https://learn.microsoft.com/api/mcp"<br/>    ]<br/>  }<br/>}</pre> </details>| [Claude Desktop MCP Guide](https://modelcontextprotocol.io/quickstart/user) |
+| **Windsurf** | <details><summary>View Config</summary><pre>{<br/>  "microsoft.docs.mcp": {<br/>    "command": "npx",<br/>    "args": [<br/>      "-y",<br/>      "mcp-remote",<br/>      "https://learn.microsoft.com/api/mcp"<br/>    ]<br/>  }<br/>}</pre> </details>| [Windsurf MCP Guide](https://docs.windsurf.com/windsurf/cascade/mcp) |
+
 
 ### ▶️ Getting Started
 1. Open GitHub Copilot in VS Code and [switch to Agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
